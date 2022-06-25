@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    background: rgb(232, 244, 244);
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(67deg,rgb(64, 55, 246),rgb(239, 203, 203));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+.header{
+    background: linear-gradient(64deg,rgb(72, 167, 240),rgb(64, 55, 246));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    height: 60px;
+    max-height: 60px;
+}
+.header .logo{
+ font-size: 2rem;
+ color: aliceblue;
+ font-family: 'Teko', sans-serif;
+ letter-spacing: 1.3px;
+}
+
+.header .social-icons a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.7rem;
+    transition: all 0.4s;
+}
+.header .social-icons a:hover{
+    background: #333;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 93vh;
+}
+.hero .box{
+   width: 500px;
+   height: auto;
+   background-color: rgb(247, 247, 247);
+   border-radius: 8px;
+   padding: 2px;
+}
+
+.hero .hero_img img{
+    width: 640px;
+    animation: scaleUp 2s linear infinite alternate;
+}
+
+@keyframes scaleUp {
+    0%{
+        transform: scale(0.9);
+    }
+
+}
+.hero .box {
+    background: linear-gradient(67deg,rgb(64, 55, 246),rgb(239, 203, 203));
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.hero .box .file-box .select-box{
+    width: 100%;
+    /* background-color: red; */
+   height: 5.9rem;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+.hero .box .file-box .select-box.dragIn{
+background-color: rgb(242, 212, 92);
+}
+.hero .box .file-box .select-box label{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(217, 217, 217, 0.168);
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   border: 1px dashed black;
+   border-radius: 8px;
+   padding: 1rem;
+   cursor: pointer;
+   text-transform: capitalize;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hero .box .file-box .select-box label:hover, .hero .box .file-box .select-box label:active{
+    background:linear-gradient(74deg,rgb(215, 188, 202),rgb(255, 82, 82));
+}
+
+.hero .box .file-box .select-box label .file-icon .iconify{
+ font-size: 3.6rem;
+ cursor: pointer;
+ color: rgb(93, 0, 232);
+ transition: all 1s;
+}
+.hero .box .file-box .select-box label:hover .file-icon .iconify{
+transform: scale(1.1);
+}
+
+.hero .box .file-box input[type="file"]{
+    display: none;
+}
+
+.hero .box .file-box  .progress-bar {
+    margin-top: .3rem;
+    background: linear-gradient(74deg,rgb(215, 188, 202),rgb(26, 19, 19));
+    width: 100%;
+    height: 30px;
+    position: relative;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 5px 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hero .box .file-box  .progress-bar span{
+ position: absolute;
+top: 40%;
+left: 0;
+width: 100%;
+height: 30%;
+background-color: rgb(20, 165, 243);
+
+}
+
+/* now links box  */
+.box .g-box{
+    width: 100%;
+    height: auto;
+    background:linear-gradient(to right, #888,#444);
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.box .g-box span{
+ color: rgb(254, 254, 254);
+ font-family: "Roboto",sans-serif;
+ letter-spacing: 1px;
+ margin-top: 5px;
+ margin-bottom: 5px;
+}
+
+.box .g-box input[type="text"]{
+width: 90%;
+height: 30px;
+ margin-top: 5px;
+ margin-bottom: 5px;
+ font-size: 1rem;
+ border: none;
+ outline: none;
+ padding-left: 3px;
+}
+
+.box .g-box input[type="text"]:hover{
+background: linear-gradient(88deg,rgb(197, 253, 129),rgb(223, 177, 71));
+padding: 1px;
+box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 5px 6px 10px 0 rgba(233, 232, 232, 0.19);
+}
+
+/* NOW CSS FOR EMAIL BOX  */
+.e-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.e-box p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+}
+.e-box .e-data input{
+width: 100%;
+height: 30px;
+padding-left: 5px;
+}
+.e-box .e-data input[type="email"]{
+border-radius: 5px;
+outline: none;
+border: none;
+transition: all 0.9s;
+}
+.e-box .e-data input[type="email"]:focus{
+transform: scale(1.1);
+}
+.e-box .e-data input[ type="submit"]{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    background: linear-gradient(34deg,lightblue, rgb(29, 29, 29));
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+.e-box .e-data input[ type="submit"]:hover{
+    background: linear-gradient(66deg,rgb(152, 226, 250), rgb(70, 70, 70));
+    color: #fff;
+}
+
+@media screen and (max-width:700px) {
+    .hero {
+    flex-direction: column;
+        height: 100vh;
+    }
+    .hero .box{
+        width: 300px;
+        height: auto;
+        background-color: rgb(247, 247, 247);
+      
+     }
+    .hero .hero_img img{
+        width: 360px;
+        /* background: linear-gradient(67deg,rgb(0, 68, 255),rgb(239, 203, 203)); */
+    }
+    
+}

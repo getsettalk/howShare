@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HowShare : File share App </title>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="theme-color" content="rgb(64, 55, 246)">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            HowShare
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/scarlet_sujeet/"><span class="iconify" data-icon="ant-design:instagram-outlined"></span></a>
+            <a href=""><span class="iconify" data-icon="carbon:logo-linkedin"></span></a>
+            <a href=""><span class="iconify" data-icon="ant-design:facebook-filled"></span></a>
+        </div>
+    </header>
+
+    <!-- file selector box  -->
+    <section class="container">
+        <div class="hero">
+           
+            <div class="hero_img">
+                <img src="images/108.svg" alt="svg">
+            </div>
+
+            <div class="box">
+                <div class="file-box">
+                    <!-- select box  -->
+                  <div class="select-box" >
+                    <input type="file" name="fileInput" id="fileInput">
+                    <label for="file" class="select-label">
+                        <div class="file-icon">
+                            <span class="iconify" data-icon="ic:baseline-file-open"></span>   
+                        </div>
+                        <span>drop & click here to select file</span>
+                    </label>
+                  </div>
+                  <!-- progrss bar  -->
+                  <div class="progress-bar">
+                    <span></span>
+                  </div>
+                </div>
+
+                <!-- generated links  -->
+                <div class="g-box">
+                    <span>Here is your generated links, send it to download file:</span>
+                    <input type="text" name="" id="new-links " value="http://127.0.0.1:5500/index.html" readonly >
+
+                </div>
+
+                <!-- send file links using email  -->
+
+                <div class="e-box">
+                  
+                    <p>send file using email:</p>
+                    <form class="e-data">
+                        <div class="">
+                            <label for="first_user">Your's Email:</label>
+                            <input type="email" name="first_user" id="first_user">
+                        </div>
+
+                        <div class="">
+                            <label for="sec_user">Friend's Email:</label>
+                            <input type="email" name="sec_user" id="sec_user">
+                        </div>
+                        
+                        <div>
+                            <input type="submit" value=" Send ">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <script src="js/code.js"></script>
+</body>
+</html>
